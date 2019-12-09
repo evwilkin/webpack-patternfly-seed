@@ -37,7 +37,8 @@ module.exports = {
     runtimeChunk: {
       name: 'runtime'
     },
-    concatenateModules: false
+    concatenateModules: false,
+    sideEffects: true
   },
   plugins: [
     new HtmlWebpackPlugin({

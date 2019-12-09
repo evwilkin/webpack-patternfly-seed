@@ -1,8 +1,11 @@
 import React from 'react';
-import { Button } from 'patternfly-react';
-// import '@patternfly/react-core/dist/styles/base.css';
-import 'patternfly-react/dist/css/patternfly-react.css';
+import '@patternfly/react-core/dist/styles/base.css';
+import { CatalogIcon } from '@patternfly/react-icons';
+import Button from '@patternfly/react-core';
 
 export default () => (
-  <Button>A PF3 Button</Button>
+  
+  <Button>
+    <CatalogIcon />
+  </Button>
 );

@@ -11,6 +11,8 @@
   "author": "redallen",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/icons": "^4.5.1",
+    "@material/react-material-icon": "^0.15.0",
     "@patternfly/react-charts": "^4.7.1",
     "@patternfly/react-core": "^3.75.2",
     "@reach/router": "^1.2.1",
@@ -22,6 +24,7 @@
     "@babel/core": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.0",
     "css-loader": "^3.1.0",
     "file-loader": "^4.1.0",
     "html-webpack-plugin": "^3.2.0",
