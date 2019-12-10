@@ -1,5 +1,19 @@
+require.extensions['.css'] = () => {};
+const components = require('@patternfly/react-core/dist/js/components');
+
+const customName = (name) => {
+  let res = '@patternfly/react-core/dist/js/'
+  if (Object.keys(components).includes(name)) {
+    res += 'components/';
+  }
+
+  res += name;
+  res += '/index.js';
+  return res;
+}
+
 module.exports = {
-  presets: ["@babel/preset-react"],
+  presets: ["@babel/preset-react", "@babel/preset-env"],
   plugins: [
     [
       "babel-plugin-import",
@@ -16,13 +30,13 @@ module.exports = {
       {
         "libraryName": "@patternfly/react-core",
         // Use ""libraryDirectory": ""," if your bundler does not support ES modules
-        customName: (name) => {
-          console.log(name);
-          return `dist/js/components/${name}`;
-        },
+        customName,
         "camel2DashComponentName": false
       },
       "react-core"
     ]
   ]
 };
+
+
+console.log(customName('Button'))

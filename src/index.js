@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import { Button } from '@patternfly/react-core';
+// import App from './app';
+import ButtonModule2 from "@patternfly/react-core/dist/js/components/Button/index.js";
+// const ButtonModule = require("@patternfly/react-core/dist/js/components/Button/index.js");
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+// console.log('ButtonModule', ButtonModule);
+// console.log('ButtonModule2', ButtonModule2);
+
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('app')
+// );
 
